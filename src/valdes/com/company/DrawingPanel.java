@@ -45,9 +45,16 @@ public class DrawingPanel extends JPanel {
     Bishop bishop3 = new Bishop(250, 740);
     Bishop bishop4 = new Bishop(600, 740);
 
-    Giraffe giraffe = new Giraffe(400, 740);
-    Queen queen = new Queen(540, 740);
+    Giraffe giraffeWhite = new Giraffe(390, 740);
+    Giraffe giraffeBlack = new Giraffe(460, 110);
+    Queen queenBlack = new Queen(315, 110);
+    Queen queenWhite = new Queen(530, 735);
 
+    King kingWhite = new King(460, 740);
+    King kingBlack = new King(390, 110);
+
+    Vizir vizirW  = new Vizir(320, 735);
+    Vizir vizirB  = new Vizir(530, 110);
 
     @Override
     public void paint(Graphics g) {
@@ -85,9 +92,14 @@ public class DrawingPanel extends JPanel {
         bishop2.drawBlackBishop(graphics2D);
         bishop3.drawWhiteBishop(graphics2D);
         bishop4.drawWhiteBishop(graphics2D);
-        giraffe.drawWhiteGiraffe(graphics2D);
-        queen.drawWhiteQueen(graphics2D);
-
+        giraffeWhite.drawWhiteGiraffe(graphics2D);
+        giraffeBlack.drawBlackGiraffe(graphics2D);
+        queenBlack.drawBlackQueen(graphics2D);
+        queenWhite.drawWhiteQueen(graphics2D);
+        kingWhite.drawWhiteKing(graphics2D);
+        kingBlack.drawBlackKing(graphics2D);
+        vizirW.drawWhiteVizir(graphics2D);
+        vizirB.drawBlackVizir(graphics2D);
     }
 
     public Dimension getPreferredSize() {

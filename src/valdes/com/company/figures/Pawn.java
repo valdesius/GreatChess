@@ -3,7 +3,6 @@ package valdes.com.company.figures;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
-import java.awt.geom.QuadCurve2D;
 
 public class Pawn extends Figure{
 
@@ -29,21 +28,10 @@ public class Pawn extends Figure{
         g2d.fillOval(x+15, y-50, 25,25);
     }
 
-    @Override
-    public void move() {
-
+    public void mover(Pawn pawn, int x, int y) {
+        pawn.x = 100;
+        pawn.y = 300;
     }
 
-    @Override
-    public void take() {
 
-    }
-
-    @Override
-    public void check() {
-    }
-
-    @Override
-    public void checkmate() {
-    }
 }

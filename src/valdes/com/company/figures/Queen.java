@@ -2,27 +2,11 @@ package valdes.com.company.figures;
 
 import java.awt.*;
 
-public class Queen extends Figure {
-    @Override
-    public void move() {
+public class Queen  extends Figure{
 
-    }
 
-    @Override
-    public void check() {
-
-    }
-
-    @Override
-    public void checkmate() {
-
-    }
-
-    @Override
-    public void take() {
-    }
-
-    Image whiteQueen = Toolkit.getDefaultToolkit().getImage("D:\\GreatChess\\src\\valdes\\com\\company\\figures\\images\\ferz1.png");
+    Image blackQueen = Toolkit.getDefaultToolkit().getImage("D:\\GreatChess\\src\\valdes\\com\\company\\figures\\images\\queenblack.jpg");
+    Image whiteQueen = Toolkit.getDefaultToolkit().getImage("D:\\GreatChess\\src\\valdes\\com\\company\\figures\\images\\queenwhite.jpg");
 
     private int x, y;
 
@@ -31,8 +15,11 @@ public class Queen extends Figure {
         this.y = y;
     }
 
+    public void drawBlackQueen(Graphics2D g2d) {
+        g2d.drawImage(blackQueen, x, y,50,60,null);
+    }
+
     public void drawWhiteQueen(Graphics2D g2d) {
         g2d.drawImage(whiteQueen, x, y,50,60,null);
-
     }
 }

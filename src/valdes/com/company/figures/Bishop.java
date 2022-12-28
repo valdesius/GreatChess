@@ -23,23 +23,5 @@ public class Bishop extends Figure{
 
     }
 
-    @Override
-    public void move() {
 
-    }
-
-    @Override
-    public void take() {
-
-    }
-
-    @Override
-    public void check() {
-
-    }
-
-    @Override
-    public void checkmate() {
-
-    }
 }
