@@ -29,3 +29,6 @@
 достигается постановкой мата королю противника. Ничья возможна,
 если ни один из игроков не может поставить мат имеющимися у
 него фигурами.
+![rkPhosSgnTQ](https://user-images.githubusercontent.com/58388133/209826640-55de427b-657d-49db-974e-00f8f1398d6e.jpg)
+![2UOx_kiLUJI](https://user-images.githubusercontent.com/58388133/209826679-f4c28100-e1e7-4c09-a2e2-3c16ed38a17f.jpg)
+
